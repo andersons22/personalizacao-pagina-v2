@@ -10,7 +10,7 @@ Instruções de Como Executar a Aplicação:
    - Abra o terminal ou prompt de comando.
    - Execute o comando:
    
-     git clone https://github.com/SEU-USUARIO/personalizacao-pagina-v2.git
+     git clone https://github.com/andersons22/personalizacao-pagina-v2.git
 
    - Navegue até a pasta do projeto:
    
