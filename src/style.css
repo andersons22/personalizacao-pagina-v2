@@ -1,5 +1,9 @@
+/* style.css */
+
+/* Define a altura da página e o layout de centralização */
 body {
     display: flex;
+    flex-direction: column; /* Adiciona flex-direction column para centralizar o conteúdo verticalmente */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -8,6 +12,7 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Centraliza a caixa de mensagem e define o estilo */
 .message-box {
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -15,6 +20,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
+    width: 300px; /* Define uma largura fixa para garantir a centralização */
 }
 
 h1 {
@@ -33,7 +39,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="color"] {
-    width: 100%;
+    width: calc(100% - 16px); /* Ajusta a largura para compensar o padding e a borda */
     padding: 8px;
     margin-bottom: 12px;
     border: 1px solid #ccc;

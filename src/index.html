@@ -1,1 +1,39 @@
-ECHO est� ativado.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de Página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="message-box">
+        <!-- Mensagem Inicial -->
+        <h1>Bem-vindo!</h1>
+
+        <!-- Formulário para Nome e Email -->
+        <form id="userForm">
+            <label for="nameInput">Digite seu nome:</label>
+            <input type="text" id="nameInput" name="name" autocomplete="name" required>
+
+            <label for="emailInput">Digite seu email:</label>
+            <input type="email" id="emailInput" name="email" autocomplete="email" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Formulário para Cor (inicialmente escondido) -->
+        <form id="colorForm" style="display: none;">
+            <p id="greeting"></p>
+            <label for="colorInput">Escolha uma cor para personalizar a página:</label>
+            <input type="color" id="colorInput" name="color">
+            <button type="submit">Aplicar Cor</button>
+        </form>
+
+        <!-- Mensagem final -->
+        <p id="finalMessage" style="display: none;">Boa escolha!</p>
+    </div>
+
+    <script src="../dist/app.js"></script>
+</body>
+</html>
